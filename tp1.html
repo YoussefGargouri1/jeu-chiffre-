@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chiffre Caché</title>
+    <script src="tp1.js" defer></script>
+    
+</head>
+<body>
+    <h1>Jeu du Chiffre Caché</h1>
+    <div class = "div1">
+        <label for="difficulty">Choisissez un niveau de difficulté: </label>
+        <select id="difficulty">
+            <option value="easy">Facile</option>
+            <option value="medium">Intermédiaire</option>
+            <option value="hard">Difficile</option>
+        </select>
+    </div>
+    <button onclick="startGame()">Commencer le jeu</button>
+    <p id="gameInfo"></p>
+    <div id="gameContainer" style="display:none;">
+        <input type="number" id="userGuess" placeholder="Entrez votre supposition" />
+        <button onclick="guessNumber()">Essayer</button>
+    </div>
+</body>
+</html>

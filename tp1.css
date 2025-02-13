@@ -1,0 +1,75 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+h1 {
+    color: #4ca8af;
+    font-size: 2.5em;
+}
+
+label {
+    font-size: 1.2em;
+    margin-right: 10px;
+}
+
+select {
+    padding: 10px;
+    font-size: 1em;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+/* Start game button */
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Game info text */
+#gameInfo {
+    font-size: 1.3em;
+    margin-top: 20px;
+}
+
+/* Game container where the user will guess the number */
+#gameContainer {
+    margin-top: 20px;
+}
+
+#userGuess {
+    font-size: 1.2em;
+    padding: 10px;
+    width: 50px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button[onclick='guessNumber()'] {
+    margin-top: 10px;
+    background-color: #008CBA;
+}
+
+button[onclick='guessNumber()']:hover {
+    background-color: #005f73;
+}
