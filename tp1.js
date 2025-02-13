@@ -51,7 +51,6 @@ function startGame() {
         }
     }
 
-    // Attach the guessNumber function to the button click
     const guessButton = document.querySelector("button[onclick='guessNumber()']");
     guessButton.onclick = guessNumber;
 }
